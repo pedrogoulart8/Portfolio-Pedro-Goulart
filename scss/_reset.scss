@@ -1,0 +1,23 @@
+
+body{
+    margin: 0;
+    font-family: $font;
+    background-color: $light;
+    
+    
+}
+
+.container{
+    margin-bottom: 150px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    color: $grey;
+    font-size: 30px;
+}
+
+p{
+    color: $grey;
+    font-size: 22px;
+}
