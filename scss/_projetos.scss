@@ -1,0 +1,58 @@
+
+.projetos{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+
+       
+        margin-top: 30px;
+
+        .titulo-projetos{
+            margin: 0;
+
+            h4{
+                text-align: center;
+                font-size: 50px;
+                font-weight: 700;
+                color: $darkBlue;
+                
+            }
+
+        }
+
+        .card-projetos{
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            
+            
+
+            p{
+                color: $dark;
+                font-size: 18px;
+            }
+
+        }
+
+        
+
+        .img-projetos{
+            width: 95%;
+            border-radius: 10px;
+        }
+
+    }
+
+
+}

@@ -23,3 +23,22 @@ p{
     color: $grey;
     font-size: 22px;
 }
+
+
+.btn{
+    background-color: $blue;
+    color: $light;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-family: $font;
+    font-weight: 500;
+    border-radius: 10px;
+    border-color: $dark;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #005494;
+        color: $light;
+    }
+}
