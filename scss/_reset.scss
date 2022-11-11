@@ -8,13 +8,15 @@ body{
 }
 
 .container{
-    margin-bottom: 150px;
+    
+    margin-bottom: 120px;
 }
 
 
 h1,h2,h3,h4,h5,h6{
     color: $grey;
     font-size: 30px;
+    font-family: $font;
 }
 
 p{
