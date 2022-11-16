@@ -1,0 +1,63 @@
+
+.footer{
+    background-color: $dark;
+    margin: 0 auto;
+    padding: 10px 0;
+   
+
+    .container{
+
+        margin: 0 auto;
+        
+        p{
+            text-align: center;
+            color: $light;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+                .midias{
+
+                    display: flex;
+                    justify-content: center;
+        
+                    .card-midias{
+        
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                        border-radius: 20px;
+                        background-color: $darkBlue;
+        
+                        &:hover{
+                            background-color: $light;
+                        }
+                      
+        
+                        a{
+        
+                            img{
+                                width: 40px;
+                                padding-left: 9px;
+                                margin-top: 8px;
+                                
+                            }
+                           }
+        
+        
+                    }
+        
+                }      
+
+        }
+
+    }
+
+}

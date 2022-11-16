@@ -4,21 +4,27 @@
     .container{
         margin-top: 40px;
         background-color: $light;
+        
+        .row{
 
-        .col-md-6{
-            text-align: center;
-            justify-content: center;
-            
-            h2{
-                color: $dark;
-            }
-
-            p{
-                font-family: $fontTexto;
-                color: $dark;
+            .col-md-6{
+                text-align: center;
+                justify-content: center;
+                
+                h2{
+                    color: $dark;
+                }
+    
+                p{
+                    font-family: $fontTexto;
+                    color: $dark;
+                }
+    
             }
 
         }
+
+        
 
         img{
             
@@ -27,7 +33,7 @@
 
         #foto-pessoal{
             display: flex;
-            justify-content: center;
+            justify-content:flex-start;
             align-items: center;
         }
 

@@ -9,7 +9,7 @@ body{
 
 .container{
     
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 
 
@@ -26,7 +26,7 @@ p{
 
 
 .btn{
-    background-color: $blue;
+    background-color: $darkBlue;
     color: $light;
     width: 150px;
     height: 50px;
@@ -38,7 +38,7 @@ p{
     cursor: pointer;
 
     &:hover{
-        background-color: #005494;
-        color: $light;
+        background-color: $light;
+        color: $darkBlue;
     }
 }

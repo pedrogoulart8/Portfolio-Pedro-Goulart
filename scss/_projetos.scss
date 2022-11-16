@@ -1,58 +1,54 @@
-
 .projetos{
 
-    
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    .container{
 
-       
-        margin-top: 30px;
 
-        .titulo-projetos{
-            margin: 0;
+    .area-projetos{
 
-            h4{
-                text-align: center;
-                font-size: 50px;
-                font-weight: 700;
-                color: $darkBlue;
-                
-            }
+        width: 90%;
+        background-color: $dark;
+        border-radius: 15px;
 
-        }
-
-        .card-projetos{
-
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            row-gap: 10px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding-top: 20px;
+        h4{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+            color: $blue; 
+            padding-top: 30px;
             padding-bottom: 20px;
-            
-            
+        }
 
-            p{
-                color: $dark;
-                font-size: 18px;
+        #p-titulo{
+            text-align: center;
+            font-size: 18x;
+            font-weight: 500;
+            color: $blue; 
+            padding-bottom: 20px;
+        }
+       
+
+        .container{
+
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                border-radius: 10px;
+                border: 1px solid $light;
             }
 
+    
         }
-
-        
-
-        .img-projetos{
-            width: 95%;
-            border-radius: 10px;
-        }
+    
 
     }
-
-
+    
 }
+
