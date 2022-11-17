@@ -62,15 +62,54 @@ p {
   color: #DDDDDD;
 }
 
+.header-fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
 @media (max-width: 992px) {
   .header {
     height: 60px;
   }
-  .header .container {
-    margin: 0 0 0 170px;
+  .header .menu {
+    width: 80%;
+    height: 100vh;
+    background-color: #040507;
+    color: #0068b5;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+    top: 60px;
+    left: 0;
+    transform: translateX(-100%) !important;
+    transition: 0.3s;
   }
-  .header .container .menu a {
-    font-size: 14px;
+  .header .menu a {
+    font-size: 14px !important;
+    display: block;
+    padding: 30px 15px;
+    border-bottom: 1px solid white;
+    margin-left: 0 !important;
+  }
+  .header .menu a:active {
+    color: #DDDDDD;
+  }
+  .header .barras-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .barras-menu .barras {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: white;
+  }
+  .header .menu-open {
+    transform: translate(0) !important;
+    transition: 0.3s;
   }
 }
 .hero-section {
@@ -91,7 +130,7 @@ p {
   text-align: center;
   color: #DDDDDD;
   font-size: 25px;
-  margin-top: -20px;
+  margin-top: 10px;
 }
 .hero-section .container .row .col-md-5 p {
   text-align: center;
@@ -219,6 +258,9 @@ p {
     font-size: 35px;
   }
 }
+.presentation {
+  padding-top: 80px;
+}
 .presentation .container {
   margin-top: 40px;
   background-color: #DDDDDD;
@@ -271,6 +313,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 80px;
 }
 .habilidades h3 {
   text-align: center;
@@ -352,6 +395,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 80px;
 }
 .projetos .area-projetos {
   width: 90%;

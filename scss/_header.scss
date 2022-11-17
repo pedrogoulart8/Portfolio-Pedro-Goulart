@@ -44,6 +44,18 @@
 
 }
 
+.header-fixed{
+
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    
+}
+
+
+
 //////////// RESPONSIVO /////////////// 
 
 @media (max-width:992px){
@@ -51,19 +63,64 @@
     .header{
 
         height: 60px;
-    
-        .container{
 
-            margin: 0 0 0 170px;
+        .menu{
+
+            width: 80%;
+            height: 100vh;
+            background-color: $dark;
+            color: $blue;
+            box-sizing: border-box;
+            position: fixed;
+            z-index: 2;
+            top: 60px;
+            left: 0;
             
-            
-            .menu{
-          
-                a{
-                    font-size: 14px;
+
+            transform: translateX(-100%) !important;
+            transition: 0.3s;
+
+      
+            a{
+
+                font-size: 14px !important;
+                display: block;
+                padding: 30px 15px;
+                border-bottom: 1px solid white;
+                margin-left: 0 !important;
+                
+                
+
+                // mostra no mobile, atraves da cor $light o item selecionado//
+                &:active{ 
+                    color: $light;
                 }
+
             }
-    
+
+        }
+
+        .barras-menu{
+
+            display: flex;
+            flex-direction: column;
+
+            .barras{
+
+                width: 40px;
+                height: 3px;
+                margin-bottom: 4px;
+                background-color: white;
+
+            }
+
+        }
+
+        .menu-open{
+
+            transform: translate(0) !important;
+            transition: 0.3s;
+
         }
 
     }
