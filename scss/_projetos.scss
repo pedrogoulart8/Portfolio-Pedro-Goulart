@@ -24,7 +24,7 @@
         }
 
         p{
-            font-size: 20px;
+            font-size: 22px;
         }
 
         .p-titulo{
@@ -70,15 +70,59 @@
 
         .area-projetos{
 
-        h4{
-                       
+            h4{                
             font-size: 40px;
+            }
+
         }
+
 
     }
 
+}
+
+
+@media (max-width:767px){
+
+    .projetos{
+
+        .area-projetos{
+
+            h4{                
+            font-size: 35px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+        }
+
+
+    }
 
 }
+
+
+
+@media (max-width:576px){
+
+    .projetos{
+
+        .area-projetos{
+
+            h4{                
+            font-size: 30px;
+            }
+
+            p{
+                font-size: 18px;
+            }
+
+        }
+
+
+    }
 
 }
 

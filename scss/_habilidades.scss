@@ -104,3 +104,34 @@
   
 
 }
+
+
+@media (max-width:767px){
+
+    .habilidades{
+
+        h3{
+            font-size: 30px;
+        }
+
+        .container{
+
+            max-width: 90%;
+
+            .card{
+                
+                width: 130px;
+                height: 100px;
+    
+                p{
+                    font-size: 16px;
+                }
+
+            }
+    
+        }
+
+    }
+  
+
+}

@@ -21,43 +21,149 @@
             align-items: center;
             justify-content: space-between;
 
+            .midias{
 
+                display: flex;
+                justify-content: center;
+    
+                .card-midias{
+    
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 20px;
+                    border-radius: 20px;
+                    background-color: $darkBlue;
+    
+                    &:hover{
+                        background-color: $light;
+                    }
+                  
+    
+                    a{
+    
+                        img{
+                            width: 40px;
+                            padding-left: 9px;
+                            margin-top: 8px;
+                            
+                        }
+                    }
+    
+    
+                }
+    
+            }      
+
+        }
+
+    }
+
+}
+
+
+
+///////////// RESPONSIVO /////////////
+
+@media (max-width:992px){
+
+    .footer{
+        padding: 8px 0;
+       
+    
+        .container{
+            
+            p{
+                font-size: 16px;
+            }
+    
+            .row{
 
                 .midias{
-
+    
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-end;
         
                     .card-midias{
         
-                        width: 50px;
-                        height: 50px;
-                        margin-left: 20px;
-                        border-radius: 20px;
-                        background-color: $darkBlue;
-        
-                        &:hover{
-                            background-color: $light;
-                        }
-                      
+                        width: 45px;
+                        height: 45px;
         
                         a{
         
                             img{
-                                width: 40px;
-                                padding-left: 9px;
+                                width: 38px;
+                                padding-left: 8px;
                                 margin-top: 8px;
-                                
                             }
-                           }
-        
-        
+                        }
                     }
         
                 }      
-
+    
+            }
+    
         }
+    
+    }
 
+}
+
+
+@media (max-width:767px){
+
+    .footer{
+        padding: 6px 0;
+       
+    
+        .container{
+            
+            p{
+                font-size: 15px;
+            }
+    
+            .row{
+
+                .col-md-6{
+
+                    padding: 0;
+
+
+                }
+
+                #area-midias{
+
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+
+                }
+
+                .midias{
+                    
+                    padding-right: 30px;
+
+                    .card-midias{
+
+                        width: 42px;
+                        height: 42px;
+        
+                        a{
+        
+                            img{
+                                width: 35px;
+                                padding-left: 7px;
+                                margin-top: 6px;
+                            }
+                        }
+                    }
+        
+                }      
+    
+            }
+    
+        }
+    
     }
 
 }

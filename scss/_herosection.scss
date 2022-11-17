@@ -3,7 +3,7 @@
 
     
     background: linear-gradient(-75.00deg, $light 50.00%, $dark 50.00%);
-    height: 90vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     
@@ -104,6 +104,9 @@
 
 }
 
+
+
+
 //////////// RESPONSIVO /////////////// 
 
 @media (max-width:992px){
@@ -113,8 +116,14 @@
         background: linear-gradient(0.00deg, $light 100.00%, $dark 0.00%);
         background-blend-mode: multiply;
         box-shadow: inset 0 0 150px 30px rgb(0, 0, 0);
+        
 
         .container{
+
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            
 
            .row{
 
@@ -192,6 +201,89 @@
     }
 
   
+
+}
+
+
+
+@media (max-width:767px){
+
+    .hero-section{
+
+        .container{
+
+            margin-top: 0;
+
+           .row{
+
+            .col-md-5{
+
+                h1{ 
+
+                    margin-top: 10px;   
+                    font-size: 25px;                
+                }
+
+                p{
+                    font-size: 22px;
+                }
+
+                span{
+                    font-size: 40px;
+                }
+    
+                   
+                .midias{
+     
+                    .card-midias{
+
+                        margin-left: 16px;
+
+                    }
+
+                }                 
+                
+            }
+
+           }
+
+        }
+
+    }
+
+}
+
+
+
+@media (max-width:576px){
+
+    .hero-section{
+
+        .container{
+
+           .row{
+
+            .col-md-5{
+
+                h1{  
+                    font-size: 22px;                
+                }
+
+                p{
+                    font-size: 20px;
+                }
+
+                span{
+                    font-size: 35px;
+                }             
+                
+            }
+
+           }
+
+        }
+
+    }
 
 }
 

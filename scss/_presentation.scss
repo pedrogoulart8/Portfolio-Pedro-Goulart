@@ -35,11 +35,19 @@
             display: flex;
             justify-content:flex-start;
             align-items: center;
-        }
-
-    }
+        }    
 
 }
+
+
+
+
+}
+
+    
+
+
+
 
 //////////// RESPONSIVO /////////////// 
 
@@ -67,6 +75,40 @@
     
             }
 
+
+        }
+
+    }
+
+
+
+}
+
+
+@media (max-width:767px){
+
+    .presentation{
+
+        .container{
+
+            .row{
+
+                .col-md-6{
+        
+                    p{
+                        font-size: 17px;
+                    }
+        
+                }
+    
+            }
+
+            #foto-pessoal{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 40px 0;
+            }
 
         }
 

@@ -44,14 +44,14 @@ p {
   justify-content: center;
 }
 .header .container {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 0 50px;
+  padding: 0 15px 0 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 .header .container .menu a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   text-decoration: none;
   margin-left: 40px;
@@ -62,9 +62,20 @@ p {
   color: #DDDDDD;
 }
 
+@media (max-width: 992px) {
+  .header {
+    height: 60px;
+  }
+  .header .container {
+    margin: 0 0 0 170px;
+  }
+  .header .container .menu a {
+    font-size: 14px;
+  }
+}
 .hero-section {
   background: linear-gradient(-75deg, #DDDDDD 50%, #040507 50%);
-  height: 90vh;
+  height: 95vh;
   display: flex;
   align-items: center;
 }
@@ -130,6 +141,11 @@ p {
     background-blend-mode: multiply;
     box-shadow: inset 0 0 150px 30px rgb(0, 0, 0);
   }
+  .hero-section .container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
   .hero-section .container .row {
     display: flex;
     flex-direction: column-reverse;
@@ -174,6 +190,35 @@ p {
     width: 70%;
   }
 }
+@media (max-width: 767px) {
+  .hero-section .container {
+    margin-top: 0;
+  }
+  .hero-section .container .row .col-md-5 h1 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .hero-section .container .row .col-md-5 p {
+    font-size: 22px;
+  }
+  .hero-section .container .row .col-md-5 span {
+    font-size: 40px;
+  }
+  .hero-section .container .row .col-md-5 .midias .card-midias {
+    margin-left: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-section .container .row .col-md-5 h1 {
+    font-size: 22px;
+  }
+  .hero-section .container .row .col-md-5 p {
+    font-size: 20px;
+  }
+  .hero-section .container .row .col-md-5 span {
+    font-size: 35px;
+  }
+}
 .presentation .container {
   margin-top: 40px;
   background-color: #DDDDDD;
@@ -206,6 +251,17 @@ p {
   }
   .presentation .container .row .col-md-6 p {
     font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .presentation .container .row .col-md-6 p {
+    font-size: 17px;
+  }
+  .presentation .container #foto-pessoal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
   }
 }
 .habilidades {
@@ -275,6 +331,21 @@ p {
     font-size: 18px;
   }
 }
+@media (max-width: 767px) {
+  .habilidades h3 {
+    font-size: 30px;
+  }
+  .habilidades .container {
+    max-width: 90%;
+  }
+  .habilidades .container .card {
+    width: 130px;
+    height: 100px;
+  }
+  .habilidades .container .card p {
+    font-size: 16px;
+  }
+}
 .projetos {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -296,7 +367,7 @@ p {
   padding-bottom: 20px;
 }
 .projetos .area-projetos p {
-  font-size: 20px;
+  font-size: 22px;
 }
 .projetos .area-projetos .p-titulo {
   text-align: center;
@@ -321,6 +392,22 @@ p {
 @media (max-width: 992px) {
   .projetos .area-projetos h4 {
     font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .projetos .area-projetos h4 {
+    font-size: 35px;
+  }
+  .projetos .area-projetos p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .projetos .area-projetos h4 {
+    font-size: 30px;
+  }
+  .projetos .area-projetos p {
+    font-size: 18px;
   }
 }
 .footer {
@@ -360,4 +447,55 @@ p {
   width: 40px;
   padding-left: 9px;
   margin-top: 8px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 8px 0;
+  }
+  .footer .container p {
+    font-size: 16px;
+  }
+  .footer .container .row .midias {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer .container .row .midias .card-midias {
+    width: 45px;
+    height: 45px;
+  }
+  .footer .container .row .midias .card-midias a img {
+    width: 38px;
+    padding-left: 8px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 6px 0;
+  }
+  .footer .container p {
+    font-size: 15px;
+  }
+  .footer .container .row .col-md-6 {
+    padding: 0;
+  }
+  .footer .container .row #area-midias {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .footer .container .row .midias {
+    padding-right: 30px;
+  }
+  .footer .container .row .midias .card-midias {
+    width: 42px;
+    height: 42px;
+  }
+  .footer .container .row .midias .card-midias a img {
+    width: 35px;
+    padding-left: 7px;
+    margin-top: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
