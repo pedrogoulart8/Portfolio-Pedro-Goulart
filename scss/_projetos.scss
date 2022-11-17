@@ -23,12 +23,20 @@
             padding-bottom: 20px;
         }
 
-        #p-titulo{
+        p{
+            font-size: 20px;
+        }
+
+        .p-titulo{
             text-align: center;
-            font-size: 18x;
-            font-weight: 500;
-            color: $blue; 
             padding-bottom: 20px;
+            color: $light;
+            font-family: $fontTexto;
+
+            #tecnologias{
+                color: $blue
+            }
+
         }
        
 
@@ -38,6 +46,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 60px;
             
             img{
                 border-radius: 10px;
@@ -52,3 +61,25 @@
     
 }
 
+
+//////////// RESPONSIVO /////////////// 
+
+@media (max-width:992px){
+
+    .projetos{
+
+        .area-projetos{
+
+        h4{
+                       
+            font-size: 40px;
+        }
+
+    }
+
+
+}
+
+}
+
+   

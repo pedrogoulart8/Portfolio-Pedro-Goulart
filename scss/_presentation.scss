@@ -40,3 +40,38 @@
     }
 
 }
+
+//////////// RESPONSIVO /////////////// 
+
+@media (max-width:992px){
+
+    .presentation{
+
+        .container{
+
+            .row{
+
+                .col-md-6{
+
+                    h2{
+                        font-size: 25px;
+                        color: $darkBlue;
+                        margin-bottom: 15px;
+                    }
+        
+                    p{
+                        font-size: 18px;
+                    }
+        
+                }
+    
+            }
+
+
+        }
+
+    }
+
+
+
+}

@@ -93,8 +93,10 @@ p {
   color: #0068b5;
 }
 .hero-section .container .row .col-md-5 .midias {
-  margin-left: 170px;
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 .hero-section .container .row .col-md-5 .midias .card-midias {
   width: 65px;
@@ -122,6 +124,56 @@ p {
   width: 100%;
 }
 
+@media (max-width: 992px) {
+  .hero-section {
+    background: linear-gradient(0deg, #DDDDDD 100%, #040507 0%);
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 150px 30px rgb(0, 0, 0);
+  }
+  .hero-section .container .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-section .container .row .col-md-5 {
+    width: 100%;
+  }
+  .hero-section .container .row .col-md-5 h1 {
+    color: #040e35;
+  }
+  .hero-section .container .row .col-md-5 p {
+    color: #040e35;
+  }
+  .hero-section .container .row .col-md-5 span {
+    font-size: 45px;
+    color: #0068b5;
+  }
+  .hero-section .container .row .col-md-5 .midias .card-midias {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #040e35;
+  }
+  .hero-section .container .row .col-md-5 .midias .card-midias:hover {
+    background-color: #040507;
+  }
+  .hero-section .container .row .col-md-5 .midias .card-midias a img {
+    width: 40px;
+    padding-left: 9px;
+    margin-top: 10px;
+  }
+  .hero-section .container .row .img-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .hero-section .container .row .img-hero #homem-oculos {
+    width: 70%;
+  }
+}
 .presentation .container {
   margin-top: 40px;
   background-color: #DDDDDD;
@@ -146,6 +198,16 @@ p {
   align-items: center;
 }
 
+@media (max-width: 992px) {
+  .presentation .container .row .col-md-6 h2 {
+    font-size: 25px;
+    color: #040e35;
+    margin-bottom: 15px;
+  }
+  .presentation .container .row .col-md-6 p {
+    font-size: 18px;
+  }
+}
 .habilidades {
   background-color: #040e35;
   width: 100%;
@@ -163,7 +225,7 @@ p {
   margin-bottom: 30px;
 }
 .habilidades .container {
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -194,6 +256,25 @@ p {
   margin: 0;
 }
 
+@media (max-width: 992px) {
+  .habilidades h3 {
+    font-size: 40px;
+  }
+  .habilidades .container {
+    max-width: 90%;
+  }
+  .habilidades .container .card {
+    width: 150px;
+    height: 120px;
+  }
+  .habilidades .container .card .img-habilidades {
+    width: 30%;
+    padding-bottom: 8px;
+  }
+  .habilidades .container .card p {
+    font-size: 18px;
+  }
+}
 .projetos {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -214,23 +295,34 @@ p {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.projetos .area-projetos #p-titulo {
+.projetos .area-projetos p {
+  font-size: 20px;
+}
+.projetos .area-projetos .p-titulo {
   text-align: center;
-  font-size: 18x;
-  font-weight: 500;
-  color: #0068b5;
   padding-bottom: 20px;
+  color: #DDDDDD;
+  font-family: "Nunito", sans-serif;
+}
+.projetos .area-projetos .p-titulo #tecnologias {
+  color: #0068b5;
 }
 .projetos .area-projetos .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 .projetos .area-projetos .container img {
   border-radius: 10px;
   border: 1px solid #DDDDDD;
 }
 
+@media (max-width: 992px) {
+  .projetos .area-projetos h4 {
+    font-size: 40px;
+  }
+}
 .footer {
   background-color: #040507;
   margin: 0 auto;

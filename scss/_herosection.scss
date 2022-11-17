@@ -24,31 +24,33 @@
                 
             
         
-                   h1{
+                h1{
                     text-align: center;
                     color: $light;
                     font-size: 25px;
                     margin-top: -20px;
-                    
-                    
-                   }
+                                       
+                }
         
-                   p{
+                p{
                     text-align: center;
                     color: $light;
                     font-size: 25px;
                     line-height: 40px;
-                   }
+                }
         
-                   span{
+                span{
                     font-size: 45px;
                     color: $blue;
-                   }
+                }
                    
-                   .midias{
+                .midias{
                     
-                    margin-left: 170px;
+                    
                     display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    margin-right: 20px;
                     
 
                     .card-midias{
@@ -71,14 +73,11 @@
                                 margin-top: 10px;
                                 
                             }
-                           }
+                        }
 
                     }
 
-    
-
-                }
-                   
+                }                 
                 
             }
 
@@ -97,26 +96,107 @@
             
                 }
                 
-               }
-
-          
- 
-
+            }
 
         }
         
-        
-
-        
     }
 
+}
 
+//////////// RESPONSIVO /////////////// 
 
+@media (max-width:992px){
 
-    
+    .hero-section{
 
+        background: linear-gradient(0.00deg, $light 100.00%, $dark 0.00%);
+        background-blend-mode: multiply;
+        box-shadow: inset 0 0 150px 30px rgb(0, 0, 0);
 
+        .container{
 
+           .row{
 
+            display: flex;
+            flex-direction: column-reverse;
+
+            .col-md-5{
+                
+                width: 100%;
+        
+                h1{ 
+                    color: $darkBlue;                     
+                }
+        
+                p{
+                    color: $darkBlue;
+                }
+        
+                span{
+                    font-size: 45px;
+                    color: $blue;
+                }
+                   
+                .midias{
+     
+                    .card-midias{
+                        width: 50px;
+                        height: 50px;
+                        margin-left: 20px;
+                        border-radius: 20px;
+                        background-color: $darkBlue;
+
+                        &:hover{
+                            background-color: $dark;
+                        }
+                      
+
+                        a{
+
+                            img{
+                                width: 40px;
+                                padding-left: 9px;
+                                margin-top: 10px;
+                                
+                            }
+                        }
+
+                    }
+
+                }                 
+                
+            }
+
+            .img-hero{
+                    
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin-bottom:40px;
+            
+                #homem-oculos{
+                    
+                    width: 70%;
+            
+                }
+                
+            }
+
+           }
+
+        }
+
+    }
+
+  
 
 }
+
+
+   
+
+
+
