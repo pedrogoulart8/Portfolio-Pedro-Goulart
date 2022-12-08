@@ -203,3 +203,114 @@ function clicouWord(){
     wordp2.style.color = '#f11b1a' 
 
 }
+
+
+
+//Card Figma//
+
+function mouseEntrouFigma(){
+
+    let figmap1 = document.querySelector('#figmap1')
+
+    figmap1.innerText = 'Figma'
+
+}
+
+function clicouFigma(){
+
+    let figmap2 = document.querySelector('#figmap2')
+
+    figmap2.innerText = '(Básico)'
+    figmap2.style.color = '#0068b5' 
+
+}
+
+
+
+
+//Card Google ADS//
+
+function mouseEntrouGoogleAds(){
+
+    let googleAdsp1 = document.querySelector('#googleAdsp1')
+
+    googleAdsp1.innerText = 'Google ADS'
+
+}
+
+function clicouGoogleAds(){
+
+    let googleAdsp2 = document.querySelector('#googleAdsp2')
+
+    googleAdsp2.innerText = '(Avançado)'
+    googleAdsp2.style.color = '#f11b1a' 
+
+}
+
+
+
+
+//Card Facebook ADS//
+
+function mouseEntrouFaceAds(){
+
+    let faceAdsp1 = document.querySelector('#faceAdsp1')
+
+    faceAdsp1.innerText = 'Facebook ADS'
+
+}
+
+function clicouFaceAds(){
+
+    let faceAdsp2 = document.querySelector('#faceAdsp2')
+
+    faceAdsp2.innerText = '(Avançado)'
+    faceAdsp2.style.color = '#f11b1a' 
+
+}
+
+
+
+//Card Google Analytics//
+
+function mouseEntrouGA(){
+
+    let gap1 = document.querySelector('#gap1')
+
+    gap1.innerText = 'Google Analytics'
+
+}
+
+function clicouGA(){
+
+    let gap2 = document.querySelector('#gap2')
+
+    gap2.innerText = '(Avançado)'
+    gap2.style.color = '#f11b1a' 
+
+}
+
+
+
+
+//Card Google Tag Manager//
+
+function mouseEntrouGTM(){
+
+    let gtmp1 = document.querySelector('#gtmp1')
+
+    gtmp1.innerText = 'Google Analytics'
+
+}
+
+function clicouGTM(){
+
+    let gtmp2 = document.querySelector('#gtmp2')
+
+    gtmp2.innerText = '(Intermediário)'
+    gtmp2.style.color = 'yellow' 
+
+}
+
+
+
